@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- 2.Página de Contacto: Debe incluir un formulario de 
+    contacto, los campos del formulario son obligatorios
+     y deben enviarse en su totalidad. Los campos son siguientes 
+     datos:
+
+a.        Nombre Completo. (Campo texto)
+b.       Rut. (Campo texto).
+c.        Fecha de Nacimiento. (Campo date)
+d.       Región. (Campo select)
+e.       Sexo. (campo radio)
+f.         Comentario. (Campo texto extendido)
+g.       Botón enviar.
+
+3.       Todas las páginas deben contener un navegador de enlace 
+que redireccione a todas las páginas antes mencionadas.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contac</title>
+
+</head>
+
+
+<body>
+
+    <h1>Déjanos tus datos de contacto</h1>
+
+    <hr>
+
+    <h3>Completa el siguiente formulario:</h3>         
+
+    <form>
+
+        <!-- a. Nombre Completo. (Campo texto)-->
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required/>  
+        
+        <br>
+
+         <!-- Rut. (Campo texto).-->    
+
+        <label for="rut">Rut:</label>
+        <input type="text" id="rut" name="rut" placeholder="Ingrese su rut" required/>    
+
+        <br>
+
+         <!-- Fecha de Nacimiento. (Campo date)-->
+    
+
+        <label for="fechaNac">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNac" name="fechaNac" required/>
+
+        <br>
+
+        <!-- Región. (Campo select) -->
+
+        <label for="region">Seleccione su region:</label>
+        <select id="region" name="region" required>         
+        
+            <option value="rm">Metropolitana</option>
+            <option value="rdelosrios">Region de los rios</option>
+            <option value="rdeloslagos">Region de los lagos</option>
+            <option value="rtarapaca">Region de tarapaca</option>
+
+        </select>
+
+        <br>
+
+        <!-- Sexo. (campo radio) -->
+
+        <p>Selecciona tu género:</p>
+        
+        <input type="radio" id="femenino" name="genero" value="femenino" required>
+        <label for="femenino">Femenino</label><br>
+        
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+        
+        <input type="radio" id="otro" name="genero" value="otro" required>
+        <label for="otro">Otro</label><br>
+
+        <br>
+
+        <!-- Comentario. (Campo texto extendido)-->
+
+
+        <label for="comentario">Comentarios:</label>
+
+        <br>
+
+        <textarea cols="50" rows="10" id="comentario"  name="comentario" required> 
+        </textarea>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+  
+                
+
+    </form>
+
+    
+</body>
+
+
+</html>
